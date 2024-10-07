@@ -192,8 +192,5 @@ data:
   verifiedWith: []
 documentation_of: misc/macro.hpp
 layout: document
-redirect_from:
-- /library/misc/macro.hpp
-- /library/misc/macro.hpp.html
-title: misc/macro.hpp
+title: Macros
 ---

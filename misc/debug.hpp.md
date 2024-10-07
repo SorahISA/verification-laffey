@@ -1,10 +1,7 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: graph/bfs_on_inverse_graph.cpp
-    title: graph/bfs_on_inverse_graph.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -108,8 +105,7 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: misc/debug.hpp
-  requiredBy:
-  - graph/bfs_on_inverse_graph.cpp
+  requiredBy: []
   timestamp: '2024-10-08 01:20:28+08:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

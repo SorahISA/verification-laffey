@@ -21,7 +21,7 @@ data:
       title: Debug Code
     - icon: ':warning:'
       path: misc/macro.hpp
-      title: misc/macro.hpp
+      title: Macros
   verificationCategories:
   - name: example
     pages:

@@ -55,6 +55,7 @@ title: BFS on Inverse Graph
 
 - ref: [CF blog](https://codeforces.com/blog/entry/93801)
 - 測試：[AtC - abc319_g](https://atcoder.jp/contests/abc319/tasks/abc319_g) / ([20240924](https://atcoder.jp/contests/abc319/submissions/58066261))
+- [code](./bfs_on_inverse_graph.cpp)
 
 ## Usage
 
