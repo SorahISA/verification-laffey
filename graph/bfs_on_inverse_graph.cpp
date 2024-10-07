@@ -1,7 +1,9 @@
-// #define PROBLEM "https://atcoder.jp/contests/abc319/tasks/abc319_g"
-#include "graph/bfs_on_inverse_graph.hpp"
+#define PROBLEM "https://atcoder.jp/contests/abc319/tasks/abc319_g"
+#ifdef local
 #include "misc/debug.hpp"
+#endif
 #include "misc/macro.hpp"
+#include "graph/bfs_on_inverse_graph.hpp"
 #include <bits/stdc++.h>
 using namespace std;
 
