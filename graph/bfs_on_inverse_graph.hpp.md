@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':x:'
-    path: graph/bfs_on_inverse_graph.test.cpp
-    title: graph/bfs_on_inverse_graph.test.cpp
-  _isVerificationFailed: true
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: graph/bfs_on_inverse_graph.cpp
+    title: graph/bfs_on_inverse_graph.cpp
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
   bundledCode: "#line 1 \"graph/bfs_on_inverse_graph.hpp\"\n#include <bits/stdc++.h>\n\
@@ -43,11 +43,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: graph/bfs_on_inverse_graph.hpp
-  requiredBy: []
+  requiredBy:
+  - graph/bfs_on_inverse_graph.cpp
   timestamp: '2024-10-08 01:20:28+08:00'
-  verificationStatus: LIBRARY_ALL_WA
-  verifiedWith:
-  - graph/bfs_on_inverse_graph.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: graph/bfs_on_inverse_graph.hpp
 layout: document
 title: BFS on Inverse Graph

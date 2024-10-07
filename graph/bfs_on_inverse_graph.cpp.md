@@ -1,26 +1,25 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':warning:'
     path: graph/bfs_on_inverse_graph.hpp
     title: BFS on Inverse Graph
-  - icon: ':x:'
+  - icon: ':warning:'
     path: misc/debug.hpp
     title: Debug Code
-  - icon: ':x:'
+  - icon: ':warning:'
     path: misc/macro.hpp
     title: misc/macro.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':warning:'
   attributes:
-    '*NOT_SPECIAL_COMMENTS*': ''
     links:
     - https://atcoder.jp/contests/abc319/tasks/abc319_g
-  bundledCode: "#line 1 \"graph/bfs_on_inverse_graph.test.cpp\"\n// #define PROBLEM\
-    \ \"https://atcoder.jp/contests/abc319/tasks/abc319_g\"\n#line 1 \"graph/bfs_on_inverse_graph.hpp\"\
+  bundledCode: "#line 1 \"graph/bfs_on_inverse_graph.cpp\"\n// #define PROBLEM \"\
+    https://atcoder.jp/contests/abc319/tasks/abc319_g\"\n#line 1 \"graph/bfs_on_inverse_graph.hpp\"\
     \n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> bfs_on_inverse_graph(auto\
     \ &ban, int start, int base = 0) {\n    int N = ssize(ban);\n    vector<int> dis(N,\
     \ -1); dis[start] = 0;\n    vector<int> unvisited;\n    for (int i = base; i <\
@@ -165,10 +164,10 @@ data:
     \  \n *                                                                      \
     \                                           \n *                             \
     \                                                                            \
-    \        \n**/\n#line 6 \"graph/bfs_on_inverse_graph.test.cpp\"\nusing namespace\
-    \ std;\n\nconst int mod = 998'244'353;\n\nvoid solve() {\n    int N, M; cin >>\
-    \ N >> M;\n    \n    vector<vector<int>> ban(N);\n    for (int i = 0; i < M; ++i)\
-    \ {\n        int u, v; cin >> u >> v, --u, --v;\n        ban[u].eb(v), ban[v].eb(u);\n\
+    \        \n**/\n#line 6 \"graph/bfs_on_inverse_graph.cpp\"\nusing namespace std;\n\
+    \nconst int mod = 998'244'353;\n\nvoid solve() {\n    int N, M; cin >> N >> M;\n\
+    \    \n    vector<vector<int>> ban(N);\n    for (int i = 0; i < M; ++i) {\n  \
+    \      int u, v; cin >> u >> v, --u, --v;\n        ban[u].eb(v), ban[v].eb(u);\n\
     \    }\n    \n    auto dis = bfs_on_inverse_graph(ban, 0, 0);\n    \n    if (dis[N-1]\
     \ == -1) { cout << -1 << \"\\n\"; return; }\n    \n    vector<vector<int>> lay(dis[N-1]\
     \ + 1);\n    for (int i = 0; i < N; ++i) { if (dis[i] <= dis[N-1] and dis[i] !=\
@@ -203,16 +202,16 @@ data:
   - graph/bfs_on_inverse_graph.hpp
   - misc/debug.hpp
   - misc/macro.hpp
-  isVerificationFile: true
-  path: graph/bfs_on_inverse_graph.test.cpp
+  isVerificationFile: false
+  path: graph/bfs_on_inverse_graph.cpp
   requiredBy: []
-  timestamp: '2024-10-08 01:22:02+08:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-10-08 01:24:09+08:00'
+  verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: graph/bfs_on_inverse_graph.test.cpp
+documentation_of: graph/bfs_on_inverse_graph.cpp
 layout: document
 redirect_from:
-- /verify/graph/bfs_on_inverse_graph.test.cpp
-- /verify/graph/bfs_on_inverse_graph.test.cpp.html
-title: graph/bfs_on_inverse_graph.test.cpp
+- /library/graph/bfs_on_inverse_graph.cpp
+- /library/graph/bfs_on_inverse_graph.cpp.html
+title: graph/bfs_on_inverse_graph.cpp
 ---

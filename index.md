@@ -8,15 +8,18 @@ data:
       title: A + B
   - name: graph
     pages:
-    - icon: ':x:'
+    - icon: ':warning:'
+      path: graph/bfs_on_inverse_graph.cpp
+      title: graph/bfs_on_inverse_graph.cpp
+    - icon: ':warning:'
       path: graph/bfs_on_inverse_graph.hpp
       title: BFS on Inverse Graph
   - name: misc
     pages:
-    - icon: ':x:'
+    - icon: ':warning:'
       path: misc/debug.hpp
       title: Debug Code
-    - icon: ':x:'
+    - icon: ':warning:'
       path: misc/macro.hpp
       title: misc/macro.hpp
   verificationCategories:
@@ -25,10 +28,5 @@ data:
     - icon: ':heavy_check_mark:'
       path: example/aplusb.test.cpp
       title: example/aplusb.test.cpp
-  - name: graph
-    pages:
-    - icon: ':x:'
-      path: graph/bfs_on_inverse_graph.test.cpp
-      title: graph/bfs_on_inverse_graph.test.cpp
 layout: toppage
 ---
