@@ -17,11 +17,10 @@ data:
   _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://atcoder.jp/contests/abc319/tasks/abc319_g
     links:
     - https://atcoder.jp/contests/abc319/tasks/abc319_g
-  bundledCode: "#line 1 \"graph/bfs_on_inverse_graph.test.cpp\"\n#define PROBLEM \"\
-    https://atcoder.jp/contests/abc319/tasks/abc319_g\"\n#line 1 \"graph/bfs_on_inverse_graph.hpp\"\
+  bundledCode: "#line 1 \"graph/bfs_on_inverse_graph.test.cpp\"\n// #define PROBLEM\
+    \ \"https://atcoder.jp/contests/abc319/tasks/abc319_g\"\n#line 1 \"graph/bfs_on_inverse_graph.hpp\"\
     \n#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> bfs_on_inverse_graph(auto\
     \ &ban, int start, int base = 0) {\n    int N = ssize(ban);\n    vector<int> dis(N,\
     \ -1); dis[start] = 0;\n    vector<int> unvisited;\n    for (int i = base; i <\
@@ -182,13 +181,13 @@ data:
     \    \n    int t = 1; // cin >> t;\n    for (int _ = 1; _ <= t; ++_) {\n     \
     \   // cout << \"Case #\" << _ << \": \";\n        solve();\n    }\n    \n   \
     \ return 0;\n}\n"
-  code: "#define PROBLEM \"https://atcoder.jp/contests/abc319/tasks/abc319_g\"\n#include\
-    \ \"graph/bfs_on_inverse_graph.hpp\"\n#include \"misc/debug.hpp\"\n#include \"\
-    misc/macro.hpp\"\n#include <bits/stdc++.h>\nusing namespace std;\n\nconst int\
-    \ mod = 998'244'353;\n\nvoid solve() {\n    int N, M; cin >> N >> M;\n    \n \
-    \   vector<vector<int>> ban(N);\n    for (int i = 0; i < M; ++i) {\n        int\
-    \ u, v; cin >> u >> v, --u, --v;\n        ban[u].eb(v), ban[v].eb(u);\n    }\n\
-    \    \n    auto dis = bfs_on_inverse_graph(ban, 0, 0);\n    \n    if (dis[N-1]\
+  code: "// #define PROBLEM \"https://atcoder.jp/contests/abc319/tasks/abc319_g\"\n\
+    #include \"graph/bfs_on_inverse_graph.hpp\"\n#include \"misc/debug.hpp\"\n#include\
+    \ \"misc/macro.hpp\"\n#include <bits/stdc++.h>\nusing namespace std;\n\nconst\
+    \ int mod = 998'244'353;\n\nvoid solve() {\n    int N, M; cin >> N >> M;\n   \
+    \ \n    vector<vector<int>> ban(N);\n    for (int i = 0; i < M; ++i) {\n     \
+    \   int u, v; cin >> u >> v, --u, --v;\n        ban[u].eb(v), ban[v].eb(u);\n\
+    \    }\n    \n    auto dis = bfs_on_inverse_graph(ban, 0, 0);\n    \n    if (dis[N-1]\
     \ == -1) { cout << -1 << \"\\n\"; return; }\n    \n    vector<vector<int>> lay(dis[N-1]\
     \ + 1);\n    for (int i = 0; i < N; ++i) { if (dis[i] <= dis[N-1] and dis[i] !=\
     \ -1) lay[dis[i]].eb(i); }\n    \n    vector<int> dp(N, 0); dp[0] = 1;\n    for\
@@ -207,7 +206,7 @@ data:
   isVerificationFile: true
   path: graph/bfs_on_inverse_graph.test.cpp
   requiredBy: []
-  timestamp: '2024-10-08 01:20:28+08:00'
+  timestamp: '2024-10-08 01:22:02+08:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: graph/bfs_on_inverse_graph.test.cpp
