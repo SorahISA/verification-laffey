@@ -22,11 +22,21 @@ data:
     - icon: ':warning:'
       path: misc/macro.hpp
       title: Macros
+  - name: string
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: string/manacher.hpp
+      title: Manacher
   verificationCategories:
   - name: example
     pages:
     - icon: ':heavy_check_mark:'
       path: example/aplusb.test.cpp
       title: example/aplusb.test.cpp
+  - name: string
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: string/manacher.test.cpp
+      title: string/manacher.test.cpp
 layout: toppage
 ---
