@@ -13,8 +13,8 @@ documentation_of: ./manacher.hpp
     - `_v`：長度 $n$ 的陣列
     - `special_char`：一個沒有出現在 `_v` 中的特殊字元
     - 算法會將陣列 `_v` pad 成長度 $2n-1$ 的陣列，其中奇數位置為 `_v` 的元素，偶數位置為 `special_char`
-- 時間計算量 $\mathcal{O}(|\texttt{_v}|)$
-- 空間計算量 $\mathcal{O}(|\texttt{_v}|)$
+- 時間計算量 $\mathcal{O}(|\texttt{\_v}|)$
+- 空間計算量 $\mathcal{O}(|\texttt{\_v}|)$
 
 ## Benchmark
 
